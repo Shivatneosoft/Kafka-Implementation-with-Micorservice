@@ -1,0 +1,16 @@
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: 10.0.61.35:9092
+#      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  boot:
+    admin:
+      client:
+        instance:
+          management-base-url: http://10.0.61.35:9092
+#spring.boot.admin.client.instance.management-base-url
+
+server:
+  port: 8090
